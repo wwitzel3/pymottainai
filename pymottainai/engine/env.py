@@ -1,3 +1,4 @@
+from enum import Enum
 from .card import Card
 
 HAND_SIZE = 5
@@ -62,3 +63,10 @@ ALL_CARDS = [
     Card(name="Bell", material=""),
     Card(name="Chopsticks", material=""),
 ]
+
+
+class Phase(Enum):
+    setup = 0
+    morning = 1
+    noon = 2
+    night = 3

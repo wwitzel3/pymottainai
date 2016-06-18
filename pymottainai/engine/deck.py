@@ -13,6 +13,9 @@ class Deck(object):
     def draw(self):
         return self.cards.pop()
 
+    def return_card(self, card):
+        self.cards.insert(0, card)
+
 
 class Hand(object):
     def __init__(self, cards=None):
