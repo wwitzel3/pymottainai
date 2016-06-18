@@ -46,6 +46,7 @@ class Game(object):
                 self.players.append(Player(name="player-{}".format(i)))
 
     def deal(self):
+        self.deck.shuffle()
         for i in range(HAND_SIZE):
             for player in self.players:
                 card = self.deck.draw()
