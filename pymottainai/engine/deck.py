@@ -1,3 +1,5 @@
+import random
+
 from .env import ALL_CARDS
 
 
@@ -6,7 +8,7 @@ class Deck(object):
         self.cards = ALL_CARDS[:]
 
     def shuffle(self):
-        pass
+        random.shuffle(self.cards)
 
     def draw(self):
         return self.cards.pop()
